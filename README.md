@@ -36,26 +36,37 @@ Critérios de aceite:
       Usuário devera visualizar botão para acessar a tela “Esqueci minha senha”.
 
 
- 
-Cenário 1: 
-   Cliente sem cadastro deseja criar conta
-   Dado que o cliente esta na tela de login 
-   E não está cadastrado no sistema 
-   Quando clicar em criar conta 
-   Então será redirecionado para uma tela de criação de conta nao existentes
-
-Cenário 2:
-   Cliente sem cadastro tenta fazer login 
-   Dado que o cliente esteja na tela de login 
-   E adicione um username não cadastrado 
-   Quando clicar em criar conta 
-   Então uma mensagem surgira avisando que a conta não existe
-
-Cenário 3:   
-
-  Cliente com cadastro informa dados incorretos de acesso 
-  Dado que o cliente esteja na tela de login 
-  E adicione um username correto 
-  Mas escreva uma senha incorreta 
+Cenário: 
+  Cliente sem cadastro deseja criar conta 
+  
+  Dado que o cliente está na tela de login 
+  
+  E não está cadastrado no sistema 
+  
   Quando clicar em criar conta 
-  Então surgirá uma mensagem avisando que a senha está incorreta
+  
+  Então será redirecionado para uma tela de criação de conta nao existente 
+  
+ Cenário: 
+ Cliente sem cadstro tenta fazer login 
+ 
+Dado que o cliente está na tela de login 
+
+E adicione um nome de usuário nao cadastrado 
+
+Quando clicar em criar conta 
+
+Então uma mensagem surgirá avisando que a conta não existe 
+
+Cenário:
+Cliente com cadastro informa dados incorretos de acesso
+
+Dado que o cliente está na tela de login 
+
+E adicione um nome de usuário correto 
+
+Mas escreva uma senha incorreta 
+
+Quando clicar em criar conta 
+
+Então virá uma mensagem avisando que a senha está incorreta 
