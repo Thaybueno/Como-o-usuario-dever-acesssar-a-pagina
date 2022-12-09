@@ -8,14 +8,13 @@ Narrativa do usuário:
 
           Para visualizar opçoes de login, cadastro e redefinição de senha na loja virtual
 
-3. Requisitos:
+Requisitos :
 
-Atores: Clientes 
+Atores: Clientes
 
 Interfaces: Ver documentos em anexo da UI/UX
 
-Dados          
-
+Dados:          
         Criação de bancos de dados/tabelas para armazenar informações dos clientes cadastrados.
 
         Criação de API para integração com font- end e banco de criado.
@@ -37,41 +36,26 @@ Critérios de aceite:
       Usuário devera visualizar botão para acessar a tela “Esqueci minha senha”.
 
 
-
-Cenário: Cliente sem cadastro deseja criar conta
-
-       Dado que o cliente esteja na tela de login 
-
-      E não esteja cadastrado no sistema 
-
-      Quando clicar em criar conta 
-
-      Então será redirecionado para uma tela de criação de conta não existente.
-
-
-
-Cenário: 
-
-   Cliente sem cadastro tenta fazer login 
-
-   Dado que o cliente esteja na tela de login 
-
-   E adicione um username não cadastrado 
-
+ 
+Cenário 1: 
+   Cliente sem cadastro deseja criar conta
+   Dado que o cliente esta na tela de login 
+   E não está cadastrado no sistema 
    Quando clicar em criar conta 
+   Então será redirecionado para uma tela de criação de conta nao existentes
 
+Cenário 2:
+   Cliente sem cadastro tenta fazer login 
+   Dado que o cliente esteja na tela de login 
+   E adicione um username não cadastrado 
+   Quando clicar em criar conta 
    Então uma mensagem surgira avisando que a conta não existe
 
-  1. Cenário:  
+Cenário 3:   
 
   Cliente com cadastro informa dados incorretos de acesso 
-
   Dado que o cliente esteja na tela de login 
-
   E adicione um username correto 
-
   Mas escreva uma senha incorreta 
-
   Quando clicar em criar conta 
-
   Então surgirá uma mensagem avisando que a senha está incorreta
