@@ -47,6 +47,7 @@ Cenário:
   
   Então será redirecionado para uma tela de criação de conta nao existente 
   
+  
  Cenário: 
  Cliente sem cadstro tenta fazer login 
  
@@ -57,6 +58,7 @@ E adicione um nome de usuário nao cadastrado
 Quando clicar em criar conta 
 
 Então uma mensagem surgirá avisando que a conta não existe 
+
 
 Cenário:
 Cliente com cadastro informa dados incorretos de acesso
